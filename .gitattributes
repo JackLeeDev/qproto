@@ -1,0 +1,4 @@
+*.lua linguist-language=Lua
+*.c linguist-language=C
+*.h linguist-language=C
+*.js linguist-language=Js
