@@ -1,0 +1,29 @@
+struct TestStruct {
+    integer testInt = 0
+}
+
+message global.test.TestTypes 1001 {
+    request {
+        struct InnerStruct {
+            integer testInt = 0
+        }
+        integer reqInt = 0 //test comment
+        integer* reqIntArray = 1
+        string reqString = 2
+        string* reqStringArray = 3
+        bytes reqBinary = 4
+        bytes* reqBinaryArray = 5
+        double reqDouble = 6
+        double* reqDoubleArray = 7
+        TestStruct reqStruct = 8
+        TestStruct* reqStructArray = 9
+        InnerStruct reqInnerStruct = 10
+        InnerStruct* reqInnerStructArray = 11
+    }
+}
+
+message TestMsg 1002 {
+    request {
+        integer value = 0
+    }
+}
