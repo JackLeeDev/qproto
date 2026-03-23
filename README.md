@@ -41,11 +41,9 @@ local buffer = qproto.encode_response("TestBag", msg)
 local id,deMsg,session,dest = qproto.decode_response(buffer)
 ```
 
-# Test 100w times(Intel(R) Core(TM) i5-13400F VMware):
+# Test 100 million times(Intel(R) Core(TM) i5-13400F):
 
 | Protocol   | Encoded Size | Encode Time | Decode Time | Total Time |
 |------------|-------------:|------------:|------------:|-----------:|
-| **sproto** | 42 bytes     | 612 ms      | 1405 ms     | 2017 ms    |
-| **pbc**    | 40 bytes     | 1574 ms     | 3092 ms     | 4666 ms    |
-| **qproto** | 42 bytes     | **573 ms**      | **781 ms**      | **1354 ms** |
-| **qproto.js**  | 42 bytes     | 1896 ms     | **531 ms**      | 2427 ms    |
+| **sproto** | 29 bytes     | 840 ms      | 1950 ms     | 2790 ms    |
+| **qproto** | 30 bytes     | **512 ms**      | **788 ms**      | **1300 ms** |
