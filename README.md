@@ -5,7 +5,8 @@
 - ⚡ **Lightweight core** (<1.2K) 
 - 🚀 **Blazing-fast** (more faster than pbc)
 - 🌐 **Smart routing** using `[node][service-address].[message]` addressing (e.g. `global.test.TestBag`)
-- 🛰️ **rpc support** (use session) 
+- 🛰️ **rpc support** (use session)
+- **QQ Group**: 1075858599
 
 # Protocal:
 ```lua
