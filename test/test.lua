@@ -7,7 +7,7 @@ local function eq(a, b)
         return false
     end
     if ta ~= "table" then
-        return true
+        return a == b
     end
     for k,v in pairs(a) do
         if not eq(v, b[k]) then
